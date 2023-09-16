@@ -1,0 +1,10 @@
+-----Today Task-----
+
+
+1: attach mongodb (done)
+2: make website like my previous project (done)
+3: make an input form (done)
+4: try to display content (done)
+5: end for now
+
+

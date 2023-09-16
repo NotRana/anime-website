@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Episode</title>
+</head>
+<body>
+    <h1>Add Episode</h1>
+    <form method="POST" action="">
+        <label for="selected_anime">Select Anime:</label>
+        <select id="selected_anime" name="selected_anime">
+            {% for title in anime_titles %}
+                <option value="{{ title }}">{{ title }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <label for="episode_link">Episode Link:</label>
+        <input type="text" id="episode_link" name="episode_link" required>
+        <br><br>
+        <input type="submit" value="Add Episode">
+    </form>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+</body>
+</html>
