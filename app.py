@@ -78,5 +78,4 @@ def add_episode():
             return f'Episode added to Anime: {selected_anime}'
     return render_template("upload_episode.html", anime_titles=anime_titles)
 
-if __name__ == '__main__':
-    app.run(port="8080", host="0.0.0.0")
+
